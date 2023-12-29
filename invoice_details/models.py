@@ -14,7 +14,7 @@ class Invoice(models.Model):
     cgst = models.FloatField()
 
     def __str__(self):
-        return self.invoice_number 
+        return self.invoice_number
 
 
 class InvoiceDetails(models.Model):
@@ -29,4 +29,4 @@ class InvoiceDetails(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return self.sr_no 
+        return str(self.invoice) 
